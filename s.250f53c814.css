@@ -1,0 +1,351 @@
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#FFFFFF;color:#2A2630;
+ font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+ font-size:15.5px;line-height:1.78;word-break:keep-all;overflow-wrap:anywhere}
+a{color:#7A295C;text-underline-offset:3px}
+img,svg{max-width:100%;height:auto;display:block}
+h1,h2,h3,h4{margin:0;letter-spacing:-.035em;line-height:1.30}
+p{margin:0 0 1em}
+.wg{max-width:1280px;margin:0 auto;padding:0 22px}
+.zq{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+ clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.cf{position:absolute;left:-9999px;top:0;background:#8A386C;color:#fff;padding:10px 16px;z-index:99}
+.cf:focus{left:8px;top:8px}
+main{display:block}
+.fz{padding:50px 0}
+.fz.tl{background:#FFFFFF}
+.fz.lt{background:#FAF7F8}
+.fz.fh{background:#F8F1F2}
+.fz.cu{background:#F7F6F6}
+
+/* ── 맨 위 **검은 띠 한 줄** — O형의 연회색 공지 띠와 **반대 명도**다 ── */
+.qt{background:#14181F;color:#fff}
+.qt .wg{display:flex;align-items:center;justify-content:center;gap:12px;height:42px;
+ position:relative}
+.qt .hk{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#fff;
+ text-decoration:none;line-height:1.2}
+.qt .hk b{font-weight:800}
+.qt .hk i{font-style:normal;color:#47C2B1;font-weight:900}
+.qt nav{display:none}
+.qt::after{content:"\00d7";position:absolute;right:22px;top:50%;transform:translateY(-50%);
+ color:rgba(255,255,255,.55);font-size:17px;line-height:1}
+
+/* ── 머리 — **왼쪽 로고 · 가운데 큰 둥근 검색칸 · 오른쪽 글 링크**(O형은 가운데 워드마크) ── */
+.xi{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid #E6DDDF}
+.xi .wg{display:flex;align-items:center;gap:22px;height:78px}
+.mo{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:#8A386C;
+ flex:0 0 auto}
+.mo .ui{width:32px;height:32px;display:block}
+.mo b{font-size:24px;font-weight:900;letter-spacing:-.06em}
+.mo span{display:none}
+.is{flex:1;display:flex;align-items:center;gap:12px;justify-content:flex-end}
+/* 가운데 둥근 검색칸 — 원본 그 자리(글자 대신 아이콘 하나) */
+.is a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;
+ color:#8A386C;text-decoration:none;border-radius:999px;background:#FAF7F8}
+.is a svg{width:20px;height:20px}
+.is a:first-child{flex:1;max-width:520px;justify-content:flex-start;height:46px;
+ border:2px solid #8A386C;background:#fff;padding:0 18px;border-radius:999px;margin-right:auto}
+.is a:first-child::after{content:"어느 동네에서 받으실까요";margin-left:10px;font-size:14px;
+ color:#5E5866;font-weight:500}
+.is a.ii{background:#47C2B1;color:#000000}
+
+/* ── ★★알약 탭 줄 — 고른 칸만 **검은 알약**(앞 열다섯 뼈대에 없는 자리) ── */
+.yd{background:#fff;border-bottom:1px solid #E6DDDF;overflow-x:auto;scrollbar-width:none}
+.yd::-webkit-scrollbar{height:0}
+.yd .wg{display:flex;gap:9px;height:62px;align-items:center;white-space:nowrap}
+.yd .wg::before{content:"\2630";display:inline-flex;align-items:center;justify-content:center;
+ width:38px;height:38px;flex:0 0 38px;font-size:17px;color:#2A2630;margin-right:4px}
+.yd a{display:inline-flex;align-items:center;height:38px;padding:0 17px;border-radius:999px;
+ font-size:14px;color:#2A2630;text-decoration:none;font-weight:700;border:1px solid #E6DDDF;
+ background:#fff}
+.yd a:hover{border-color:#8A386C;color:#8A386C}
+.yd a[aria-current]{background:#14181F;border-color:#14181F;color:#fff;font-weight:800}
+.yd a.ig{color:#1D665C;border-color:#F8F1F2}
+
+/* ── 히어로 — **둥근 큰 카드 + 좌우가 살짝 잘려 보이는 결**(peek) ── */
+.nj{position:relative;background:#fff;padding:20px 0 4px;overflow:hidden}
+.nj .wg{position:relative;display:block;padding:0 22px;max-width:1280px}
+.ew{position:relative;border-radius:16px;overflow:hidden;
+ box-shadow:0 1px 0 #E6DDDF}
+.ew svg{width:100%;height:auto;display:block;min-height:330px}
+.ew::before,.ew::after{content:"";position:absolute;top:0;bottom:0;width:26px;z-index:3}
+.ew::before{left:0;background:linear-gradient(90deg,rgba(255,255,255,.55),rgba(255,255,255,0))}
+.ew::after{right:0;background:linear-gradient(270deg,rgba(255,255,255,.55),rgba(255,255,255,0))}
+.fc{position:absolute;left:44px;right:44px;bottom:48px;z-index:4}
+.qz{display:inline-flex;align-items:center;margin:0 0 12px;font-size:12px;font-weight:800;
+ color:#000000;background:#47C2B1;padding:6px 14px;border-radius:999px;letter-spacing:.02em}
+.nj h1{font-size:42px;font-weight:900;margin:0 0 12px;letter-spacing:-.055em;color:#8A386C}
+.nj h1 em{font-style:normal;color:#1D665C}
+.tb{margin:0 0 20px;font-size:15.5px;color:#2A2630;max-width:30em}
+.vp{display:flex;gap:10px;flex-wrap:wrap}
+.gx{display:inline-flex;align-items:center;gap:8px;background:#8A386C;color:#fff;
+ text-decoration:none;font-weight:800;padding:14px 26px;font-size:15px;border:2px solid #8A386C;
+ border-radius:999px}
+.gx svg{width:17px;height:17px}
+.gx.fx{background:#fff;color:#8A386C}
+/* 오른쪽 아래 「n / N」 알약 — 원본 캐러셀 세는 자리 */
+.pp{position:absolute;right:62px;bottom:30px;z-index:5;font-size:12.5px;font-weight:700;
+ color:#fff;background:rgba(20,24,31,.62);padding:6px 15px;border-radius:999px;
+ letter-spacing:.02em}
+
+/* ── ★★동그란 아이콘 바로가기 격자 — 원본 그 자리(앞 열다섯 뼈대에 없다) ── */
+.ej{display:grid;grid-template-columns:repeat(8,1fr);gap:18px 10px;justify-items:center}
+.ej a{display:flex;flex-direction:column;align-items:center;gap:9px;text-decoration:none;
+ color:#2A2630;font-size:12.5px;font-weight:700;text-align:center;line-height:1.35;
+ border:0;background:none;padding:0;max-width:94px}
+.ej .xa{display:inline-flex;align-items:center;justify-content:center;width:58px;height:58px;
+ border-radius:50%;background:#FAF7F8;border:1px solid #E6DDDF}
+.ej .xa svg{width:25px;height:25px;color:#8A386C}
+.ej .xa b{color:#8A386C;font-size:14px;font-weight:900}
+.ej a:hover .xa{background:#F8F1F2;border-color:#47C2B1}
+.ej a.ii .xa{background:#8A386C;border-color:#8A386C}
+.ej a.ii .xa svg,.ej a.ii .xa b{color:#fff}
+.ej b{font-weight:700}
+
+/* ── 구역 머리 — ★**첫 낱말만 포인트색** + 문장형 소제목(원본 "베스트 추천 상품") ── */
+.ow{display:flex;align-items:baseline;gap:13px;margin:0 0 24px}
+.ow h2{font-size:27px;font-weight:900;color:#2A2630;letter-spacing:-.05em;line-height:1.26}
+.ow h2 em{font-style:normal;color:#1D665C}
+.ow .yu{font-size:11px;font-weight:800;letter-spacing:.16em;color:#5E5866;white-space:nowrap}
+.gd{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:13.5px;
+ color:#5E5866;text-decoration:none;white-space:nowrap}
+.gd:hover{color:#8A386C}
+.xu{margin:-14px 0 22px;color:#5E5866;font-size:14.5px}
+/* 알약 탭(구역 안) */
+.mq{display:flex;gap:8px;margin:0 0 20px;overflow-x:auto;scrollbar-width:none}
+.mq::-webkit-scrollbar{height:0}
+.mq a{padding:9px 19px;font-size:14px;font-weight:700;color:#2A2630;text-decoration:none;
+ border:1px solid #E6DDDF;border-radius:999px;background:#fff;white-space:nowrap}
+.mq a[aria-current],.mq a.ii{background:#14181F;border-color:#14181F;color:#fff;font-weight:800}
+
+/* ── 카드 격자 — ★**글이 위 · 그림이 아래**(앞 뼈대는 모두 그림이 위였다) ── */
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 20px}
+.vd{display:flex;flex-direction:column;text-decoration:none;color:#2A2630;background:#fff;
+ border:1px solid #E6DDDF;border-radius:16px;padding:20px 20px 0;overflow:hidden}
+.vd .ek{display:block;border-radius:12px 12px 0 0;margin:14px -20px 0;width:calc(100% + 40px);
+ max-width:none;order:2}
+.vd .bk{display:block;padding:0;order:1}
+.vd .xl{display:block;font-size:16px;font-weight:800;letter-spacing:-.035em;line-height:1.42}
+.vd .tu{display:block;margin-top:6px;font-size:13.5px;color:#5E5866;line-height:1.55;
+ overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.vd .gj{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-size:13.5px;
+ font-weight:800;color:#1D665C}
+.vd .gj svg{width:14px;height:14px}
+.vd:hover{border-color:#8A386C}
+.vd:hover .xl{color:#8A386C}
+
+/* ── 한 줄 목록 — 둥근 칸 2열(O형은 3열 밑줄 줄이었다) ── */
+.lo{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.um{display:flex;gap:14px;align-items:center;padding:13px 15px;text-decoration:none;
+ color:#2A2630;border:1px solid #E6DDDF;border-radius:14px;background:#fff}
+.um .ek{width:54px;height:54px;flex:0 0 54px;border-radius:12px}
+.um .bk{display:block;min-width:0}
+.um .cy{display:block;font-size:11px;color:#1D665C;font-weight:800;letter-spacing:.1em}
+.um .xl{display:block;font-size:14.5px;font-weight:800;margin-top:1px}
+.um .gj{display:block;font-size:12.5px;color:#5E5866;margin-top:1px;
+ overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.um:hover{border-color:#8A386C}
+
+/* ── 칩 ── */
+.ue{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.ue a{border:1px solid #E6DDDF;border-radius:999px;padding:9px 17px;font-size:13.5px;
+ color:#2A2630;text-decoration:none;background:#fff;font-weight:600}
+.ue a[aria-current],.ue a.ii{background:#14181F;border-color:#14181F;color:#fff;font-weight:800}
+.kr{display:flex;flex-wrap:wrap;gap:8px}
+.kr a{border:1px solid #E6DDDF;border-radius:999px;padding:7px 15px;font-size:13px;
+ color:#5E5866;text-decoration:none;background:#fff}
+.kr a:hover{border-color:#8A386C;color:#8A386C}
+
+/* ── 전폭 단추 — **둥근 알약**(O형은 각진 네모였다) ── */
+.zl{display:flex;align-items:center;justify-content:center;gap:7px;margin:26px auto 0;
+ border:1px solid #E6DDDF;padding:15px 44px;font-size:14.5px;font-weight:800;
+ color:#2A2630;text-decoration:none;background:#fff;max-width:300px;border-radius:999px}
+.zl:hover{border-color:#8A386C;color:#8A386C;background:#FAF7F8}
+
+/* ── 프로그램 메뉴 9:16 — 둥글게 ── */
+.sw{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.sw a{display:block;text-decoration:none;color:inherit}
+.sw img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:14px;background:#FAF7F8}
+.sw b{display:block;margin:11px 3px 0;font-size:14.5px;font-weight:800}
+.sw small{display:block;margin:3px 3px 0;font-size:12.5px;color:#5E5866;line-height:1.5}
+
+/* ── 찾기 칸 — 둥근 카드 ── */
+.sd{background:#FAF7F8;padding:26px 24px;border-radius:18px;border:1px solid #E6DDDF}
+.ao{display:block;font-size:11px;letter-spacing:.2em;color:#1D665C;font-weight:800;
+ margin-bottom:14px}
+.bf{display:grid;grid-template-columns:1fr 1fr auto;gap:10px}
+.sd select{width:100%;height:52px;padding:0 16px;font-size:15px;border:1px solid #E6DDDF;
+ background:#fff;color:#2A2630;border-radius:999px;appearance:none}
+.ug{height:52px;padding:0 32px;background:#8A386C;color:#fff;border:0;
+ font-size:15px;font-weight:800;cursor:pointer;border-radius:999px}
+.ug:disabled{background:#F1E4E6;color:#5E5866;cursor:default}  /* ★흰 글자를 연회색에 올리면 1.31:1 이다(렌더검사가 잡았다) */
+.rv{margin:12px 0 0;font-size:12.5px;color:#5E5866}
+
+/* ── 요금 — 둥근 칸(취소선 자리는 쓰지 않는다) ── */
+.zo{display:flex;align-items:center;gap:16px;padding:17px 18px;margin-bottom:10px;
+ border:1px solid #E6DDDF;border-radius:14px;background:#fff}
+.zo.ii{border-color:#8A386C;border-width:2px}
+.zo.ii .xl{color:#8A386C}
+.zo .hx{font-size:12px;font-weight:900;color:#1D665C;letter-spacing:.1em}
+.zo .bk{flex:1;min-width:0}
+.zo .xl{display:block;font-weight:800;font-size:15.5px}
+.zo .tu{display:block;font-size:13px;color:#5E5866}
+.zo .jx{text-align:right;white-space:nowrap}
+.zo .jx b{display:block;font-size:19px;color:#1D665C}
+.zo .jx span{font-size:12.5px;color:#5E5866}
+.cw{margin:20px 0 0;background:#FAF7F8;padding:16px 18px;font-size:13.5px;color:#5E5866;
+ border-radius:14px}
+.cw b{display:block;color:#2A2630;margin-bottom:4px}
+
+/* ── 문답 — 둥근 칸 ── */
+.ki{margin:0}
+.px{border:1px solid #E6DDDF;border-radius:14px;padding:18px 20px;margin-bottom:10px;
+ background:#fff}
+.px h3{font-size:16px;font-weight:800;margin:0 0 8px}
+.px h3::before{content:"Q";display:inline-flex;width:22px;height:22px;margin-right:9px;
+ background:#47C2B1;color:#000000;align-items:center;justify-content:center;font-size:12px;
+ vertical-align:-4px;font-weight:900;border-radius:50%}
+.px dd{margin:0;color:#5E5866;font-size:14.5px}
+
+/* ── 띠 배너 — **둥근 큰 카드**(O형은 전폭 본색 띠였다) ── */
+.yg{background:#fff;padding:12px 0 40px}
+.yg .wg{background:#8A386C;color:#fff;border-radius:20px;padding:44px 40px;text-align:left}
+.yg .ow{justify-content:flex-start}
+.yg .ow h2{color:#fff}
+.yg .ow h2 em{color:#fff;text-decoration:underline;text-underline-offset:6px}
+.yg .ow .yu{color:rgba(255,255,255,.6)}
+.yg .gd{display:none}
+.yg .xu{color:rgba(255,255,255,.84);max-width:36em}
+.yg .vp{justify-content:flex-start}
+.yg .gx{background:#fff;color:#8A386C;border-color:#fff}
+.yg .gx.fx{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.yg a{color:#fff}
+
+/* ── 글 덩이 ── */
+.kc{background:#fff;padding:28px 0 6px;position:relative}
+.kc .xz{display:inline-flex;align-items:center;gap:9px;margin-bottom:14px;
+ background:#FAF7F8;border-radius:999px;padding:7px 16px 7px 10px}
+.kc .xz svg{width:23px;height:23px}
+.kc .xz span{font-size:11px;font-weight:800;color:#1D665C;letter-spacing:.16em}
+.kc .mg{position:absolute;opacity:.30;pointer-events:none}
+.kc .mg.jb{left:0;top:14px;width:26px}
+.kc .mg.gv{right:0;top:14px;width:26px}
+.kc .mg.xv{right:0;bottom:14px;width:26px}
+.kc .mg.mr{left:0;bottom:14px;width:26px}
+.tm{max-width:66ch}
+.tm h2{font-size:22px;margin:0 0 14px;font-weight:900;padding-left:13px;
+ border-left:5px solid #8A386C;line-height:1.36}
+.tm p{margin:0 0 1.04em}
+.tm strong{font-weight:800;color:#8A386C}
+.tm a{color:#1D665C}
+
+/* ── 빵부스러기 ── */
+.fn{background:#fff}
+.fn .wg{display:flex;gap:8px;align-items:center;height:46px;font-size:12.5px;
+ color:#5E5866;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.fn .wg::-webkit-scrollbar{height:0}
+.fn a{color:#5E5866;text-decoration:none}
+.fn i{font-style:normal;color:#E6DDDF}
+
+/* ── 오른쪽 아래 「위로」 — 동그라미 한 칸(O형은 네모였다) ── */
+.nl{position:fixed;right:16px;bottom:84px;z-index:30}
+.nl a{width:48px;height:48px;background:#fff;border:1px solid #E6DDDF;border-radius:50%;
+ display:flex;align-items:center;justify-content:center;font-size:0;color:#8A386C;
+ text-decoration:none;box-shadow:0 2px 10px rgba(20,24,31,.10)}
+.nl a svg{width:18px;height:18px}
+.nl a:not(:last-child){display:none}
+.nl a:hover{background:#8A386C;color:#fff;border-color:#8A386C}
+@media (min-width:980px){.nl{bottom:24px}}
+
+/* ── 꼬리 — **흰 바탕 + 가는 선**(O형은 연회색 + 굵은 선이었다) ── */
+.bb{background:#fff;border-top:1px solid #E6DDDF;padding:44px 0 108px;margin-top:16px}
+.zz{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
+.zz a{font-size:13.5px;color:#2A2630;text-decoration:none;font-weight:700;
+ padding:8px 16px;border:1px solid #E6DDDF;border-radius:999px}
+.zz a:hover{border-color:#8A386C;color:#8A386C}
+.dw{display:grid;grid-template-columns:repeat(2,minmax(0,340px));gap:26px;margin:0 0 24px}
+.dw h4{font-size:11px;letter-spacing:.2em;color:#1D665C;margin:0 0 10px}
+.dw ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}
+.dw a{font-size:13px;color:#5E5866;text-decoration:none}
+.ls{display:inline-flex;align-items:center;gap:9px;font-size:23px;font-weight:900;
+ color:#8A386C;text-decoration:none;margin:0 0 6px;letter-spacing:-.04em}
+.ls svg{width:20px;height:20px}
+.nm{margin:0 0 20px;font-size:13px;color:#5E5866}
+.ea{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:0 0 20px;
+ font-size:13px;color:#5E5866}
+.ea dt{font-weight:800;color:#2A2630}
+.ea dd{margin:0}
+.jv{font-size:12.5px;color:#5E5866;border-top:1px solid #E6DDDF;padding-top:18px}
+.jv p{margin:0 0 .5em}
+.pe{font-size:12px;color:#5E5866;margin-top:14px}
+.hs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+.hs a{font-size:12.5px;color:#5E5866}
+.zc{display:block;width:38px;height:38px;margin:0 0 12px}
+
+/* ── 모바일 바닥 — **떠 있는 둥근 막대**(O형은 네모 탭바 다섯 칸이었다) ── */
+.ly{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:#fff;
+ border:1px solid #E6DDDF;border-radius:999px;box-shadow:0 6px 22px rgba(20,24,31,.16);
+ display:grid;grid-template-columns:repeat(4,1fr) 1.5fr;overflow:hidden}
+.ly a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+ height:60px;color:#5E5866;text-decoration:none;font-size:11px;font-weight:700}
+.ly a svg{width:19px;height:19px}
+.ly a.ci{background:#47C2B1;color:#000000}
+.ly a.ci b{font-size:11.5px;font-weight:900}
+.ly a.ci .lz{display:none}
+@media (min-width:980px){.ly{display:none}.bb{padding-bottom:44px}}
+
+@media (max-width:1180px){
+ .tg{grid-template-columns:repeat(3,1fr)}
+ .ej{grid-template-columns:repeat(6,1fr)}
+}
+@media (max-width:900px){
+ .wg{padding:0 16px}
+ .xi .wg{height:62px;gap:12px}
+ .mo b{font-size:21px}
+ .is a:first-child{max-width:none;height:40px;padding:0 14px}
+ .is a:first-child::after{font-size:13px}
+ .yd .wg{gap:7px;height:54px}
+ .nj{padding:12px 0 2px}
+ .nj .wg{padding:0 16px}
+ .ew{border-radius:14px}
+ /* ★모바일은 그림이 slice 로 잘려 **가운데가 올라온다** — 글자 뒤로 물건이 겹쳤다
+    (캡처에서 보고 고쳤다). PC 는 그대로 두고 **모바일만** 흰 덮개를 넓힌다. */
+ .ew::before{width:72%;background:linear-gradient(90deg,rgba(255,255,255,.96) 0%,
+  rgba(255,255,255,.93) 52%,rgba(255,255,255,0) 100%)}
+ .ew::after{width:14px}
+ .fc{left:20px;right:20px;bottom:26px}
+ .nj h1{font-size:27px}
+ .tb{font-size:14.5px;margin-bottom:16px}
+ .ow{flex-wrap:wrap;gap:4px 12px}
+ .ow h2{font-size:22px}
+ .tg{grid-template-columns:repeat(2,1fr);gap:16px 12px}
+ .vd{padding:16px 16px 0;border-radius:14px}
+ .vd .ek{margin:12px -16px 0;width:calc(100% + 32px)}
+ .lo{grid-template-columns:1fr}
+ .ej{grid-template-columns:repeat(4,1fr);gap:16px 8px}
+ .ej .xa{width:52px;height:52px}
+ .sw{grid-template-columns:repeat(3,1fr);gap:10px}
+ .bf{grid-template-columns:1fr}
+ .ug{width:100%}
+ .fz{padding:34px 0}
+ .yg .wg{padding:30px 22px;border-radius:16px}
+ .dw{grid-template-columns:1fr}
+ /* ★모바일은 글이 그림을 덮어 아래 알약과 단추가 겹친다 — 알약을 **위로** 올린다 */
+ .pp{right:16px;top:14px;bottom:auto}
+}
+@media (max-width:480px){
+ .sw{grid-template-columns:repeat(2,1fr)}
+ .nj h1{font-size:24px}
+ .ej{grid-template-columns:repeat(4,1fr)}
+ .ej a{font-size:11.5px}
+ .ow h2{font-size:20px}
+ .is a:first-child::after{content:"동네 찾기"}
+}
+
+.fz{padding:50px 0}
+.tm{max-width:66ch;counter-reset:h2q}
+.tm h2::before{counter-increment:h2q;content:"(" counter(h2q) ") ";color:#1D665C;font-size:.8em}
+.tm p{line-height:1.80}
+.bj{border-radius:16px}
